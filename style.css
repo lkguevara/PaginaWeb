@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: #313052;
+ 
+}
+
+.navegation {
+    width: 1000px;
+    margin: 30px auto;
+    background: white;
+}
+
+.navegation ul{
+    list-style: none;
+}
+
+.menu > li{
+    /* position: relative; */
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: rgb(2, 1, 1);
+    transition: all .3s;
+}
+
+.submenu_1 {
+    position: absolute;
+    background:rgb(255, 255, 255);
+    width: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu_2 {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 9%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu_1 li a{
+    display:block;
+    padding: 15px;
+    color: rgb(14, 2, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.submenu_2 li a{
+    display:block;
+    padding: 15px;   
+    color:  rgb(14, 2, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu_1{
+    visibility: visible;
+    opacity: 1;
+ 
+}
+
+.menu li:hover .submenu_2{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
